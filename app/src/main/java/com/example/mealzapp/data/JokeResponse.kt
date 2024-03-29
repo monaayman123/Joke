@@ -1,7 +1,7 @@
 package com.example.mealzapp.data
 
 
-import com.example.mealzapp.data.Flags
+
 import com.google.gson.annotations.SerializedName
 
 data class JokeResponse(

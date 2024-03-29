@@ -69,7 +69,7 @@ dependencies {
     //ViewModel && LiveData
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
-
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1-Beta")
     //kotlin-coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
 
