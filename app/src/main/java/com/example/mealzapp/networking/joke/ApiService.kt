@@ -1,4 +1,4 @@
-package com.example.mealzapp.networking
+package com.example.mealzapp.networking.joke
 
 import com.example.mealzapp.data.JokeResponse
 import retrofit2.Response

@@ -4,7 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.mealzapp.data.JokeResponse
-import com.example.mealzapp.networking.JokeRetrofit
+import com.example.mealzapp.networking.joke.JokeRetrofit
 import kotlinx.coroutines.launch
 
 class JokeViewModel:ViewModel() {

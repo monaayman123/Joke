@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
     id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -46,6 +47,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -71,7 +73,13 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1-Beta")
     //kotlin-coroutines
+
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
+    implementation("com.google.dagger:hilt-android:2.44")
+    kapt("com.google.dagger:hilt-android-compiler:2.44")
+    implementation("androidx.hilt:hilt-work:1.0.0")
+    // When using Kotlin.
+    kapt("androidx.hilt:hilt-compiler:1.0.0")
 
 //    //Room-DataBase
 //    implementation("androidx.room:room-runtime:$room_version")
