@@ -9,7 +9,5 @@ object JokeRetrofit {
         .baseUrl(BASE_URL)
         .addConverterFactory(GsonConverterFactory.create())
         .build()
-    val apiService= retrofit.create(ApiService::class.java)
-
 
 }
